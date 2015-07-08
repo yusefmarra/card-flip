@@ -1,4 +1,4 @@
-# CSS 1: Card Flip
+# CSS Card Flip
 
 **Requirements**: Using the starter HTML, CSS, and images, do the following:
 
