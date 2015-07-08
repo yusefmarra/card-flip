@@ -1,1 +1,15 @@
 /* add your styles here */
+.primary {
+  backface-visibility: hidden;
+}
+.secondary {
+  backface-visibility: hidden;
+  position: relative;
+  top: -200px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.secondary:hover {
+  opacity: 1;
+}
