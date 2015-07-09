@@ -1,15 +1,29 @@
 /* add your styles here */
-.primary {
-  backface-visibility: hidden;
-}
 .secondary {
-  backface-visibility: hidden;
   position: relative;
   top: -200px;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
+  z-index: -1;
 }
 
-.secondary:hover {
-  opacity: 1;
+.primary,
+.secondary {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 1s;
+          transition: transform 1s;
+}
+
+.secondary {
+  -webkit-transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
+}
+
+.portfolio-item:hover .primary {
+  -webkit-transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
+}
+
+.portfolio-item:hover .secondary {
+  -webkit-transform: rotateY(0);
+        transform: rotateY(0);
 }
